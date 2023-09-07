@@ -158,7 +158,7 @@ body {
 .l-box h1 {
     text-align: center;
     border-bottom: solid rgba(255, 255, 255, 0.500) 2px;
-    padding: 20px 0 20px 0;
+    padding: 0 0 10px 0;
     color: rgb(172, 80, 123);
 }
 
@@ -221,6 +221,13 @@ body {
     color: var(--main-purple-color);
 }
 
+.l-button:hover {
+    background-color: rgb(172, 80, 123);
+    box-shadow: 0px 0px 30px rgb(172, 80, 123);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
 .l-account {
     display: flex;
     align-items: center;
@@ -229,7 +236,7 @@ body {
 }
 
 .account {
-    color: white;
+    color: var(--main-purple-color);
     cursor: pointer;
     text-decoration: underline;
     transition: 0.5s;
