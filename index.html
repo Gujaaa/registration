@@ -9,10 +9,10 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="box">
+    <div class="r-container" id="rContainer">
+        <div class="r-box">
             <h1>Registration</h1>
-            <div class="namelastname">
+            <div class="r-namelastname">
                 <div>
                     <p>Name</p>
                     <input type="Name">
@@ -22,22 +22,47 @@
                     <input type="Lastname">
                 </div>
             </div>
-            <div class="email">
-                <div>
-                    <p>Email</p>
-                    <input type="Name">
-                </div>
+            <div class="r-email">
+                <p>Email</p>
+                <input type="Name">
             </div>
-            <div class="password">
+            <div class="r-password">
                 <div>
                     <p>Password</p>
                     <input type="password" id="password">
                 </div>
                 <div>
                     <p>Confirm Password</p>
-                    <input type="password" id="password">
+                    <input type="confirmpassword" id="Confirmpassword">
                 </div>
             </div>
+        </div>
+        <button class="r-button" type="submit">Register</button>
+    </div>
+
+
+
+
+    <!-- --------------------------------------------------- -->
+
+
+
+    <div class="l-container" id="lContainer">
+        <div class="l-box">
+            <h1>Login</h1>
+            <div class="l-email">
+                <p>Email</p>
+                <input type="Name">
+                <p>Password</p>
+                <input type="l-password" id="lPassword">
+            </div>
+        </div>
+        <div class="l-account">
+            <button class="l-button" type="submit">Login</button>
+            <h4 class="account" id="account">Register Now</h4>
+        </div>
+    </div>
 </body>
+<script src="index.js"></script>
 
 </html>

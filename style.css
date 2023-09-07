@@ -1,3 +1,7 @@
+:root {
+    --main-purple-color: rgb(172, 80, 123);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +20,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.container {
+.r-container {
     width: 600px;
     height: 500px;
     display: flex;
@@ -25,29 +29,33 @@ body {
     flex-direction: column;
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.24);
+    display: none;
+    opacity: 0;
+    transform: scale(0%);
+    transition: 1s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-.box h1 {
+.r-box h1 {
     text-align: center;
     border-bottom: solid rgba(255, 255, 255, 0.500) 2px;
-    padding: 5px 0 30px 0;
+    padding: 20px 0 20px 0;
     color: rgb(172, 80, 123);
 }
 
-.namelastname {
+.r-namelastname {
     gap: 20px;
     display: flex;
     padding: 0 0 10px 0;
 }
 
-.namelastname p {
+.r-namelastname p {
     padding: 10px 0 5px 0;
     display: flex;
     color: white;
     justify-content: center;
 }
 
-.namelastname input {
+.r-namelastname input {
     height: 40px;
     width: 260px;
     display: flex;
@@ -58,21 +66,21 @@ body {
     background-color: rgba(255, 255, 255, 0.500);
 }
 
-.email {
+.r-email {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 0 10px 0;
 }
 
-.email p {
+.r-email p {
     padding: 10px 0 5px 0;
     display: flex;
     color: white;
     justify-content: center;
 }
 
-.email input {
+.r-email input {
     height: 40px;
     width: 540px;
     display: flex;
@@ -83,20 +91,20 @@ body {
     background-color: rgba(255, 255, 255, 0.500);
 }
 
-.password {
+.r-password {
     gap: 20px;
     display: flex;
-    padding: 0 0 10px 0;
+    padding: 0 0 40px 0;
 }
 
-.password p {
+.r-password p {
     padding: 10px 0 5px 0;
     display: flex;
     color: white;
     justify-content: center;
 }
 
-.password input {
+.r-password input {
     height: 40px;
     width: 260px;
     display: flex;
@@ -105,4 +113,133 @@ body {
     border-radius: 20px;
     padding: 5px 10px 5px 10px;
     background-color: rgba(255, 255, 255, 0.500);
+}
+
+.r-button {
+    height: 40px;
+    width: 150px;
+    font-size: 17px;
+    border: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.500);
+    transition: 0.5s;
+    color: rgb(172, 80, 123);
+}
+
+.r-button:hover {
+    background-color: rgb(172, 80, 123);
+    box-shadow: 0px 0px 30px rgb(172, 80, 123);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+.l-container {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+.l-box {
+    width: auto;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.l-box h1 {
+    text-align: center;
+    border-bottom: solid rgba(255, 255, 255, 0.500) 2px;
+    padding: 20px 0 20px 0;
+    color: rgb(172, 80, 123);
+}
+
+.l-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 10px 0;
+}
+
+.l-email p {
+    padding: 10px 0 5px 0;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.l-email input {
+    height: 40px;
+    width: 400px;
+    display: flex;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    background-color: rgba(255, 255, 255, 0.500);
+}
+
+.l-password {
+    padding: 0 40px;
+}
+
+.l-password p {
+    padding: 10px 0 5px 0;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.l-password input {
+    height: 40px;
+    width: 260px;
+    display: flex;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    background-color: rgba(255, 255, 255, 0.500);
+}
+
+.l-button {
+    height: 40px;
+    width: 150px;
+    font-size: 17px;
+    border: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.500);
+    transition: 0.5s;
+    color: var(--main-purple-color);
+}
+
+.l-account {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.account {
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.account:hover {
+    color: var(--main-purple-color);
+}
+
+.registerAnim {
+    opacity: 1;
+    transform: scale(100%);
 }
