@@ -35,6 +35,15 @@ body {
     transition: 1s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
+.r-box {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 .r-box h1 {
     text-align: center;
     border-bottom: solid rgba(255, 255, 255, 0.500) 2px;
@@ -133,6 +142,40 @@ body {
     color: rgb(255, 255, 255);
     font-weight: 500;
 }
+
+
+
+
+
+.r-account {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.r-bottom {
+    display: flex;
+    gap: 7px;
+}
+
+.r-bottom p {
+    font-size: 17px;
+    color: white;
+}
+
+.re-account {
+    color: var(--main-purple-color);
+    cursor: pointer;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+
+
+
+
+
 
 .l-container {
     width: 600px;
@@ -235,12 +278,12 @@ body {
     gap: 40px;
 }
 
-.l-account .bottom {
+.l-account .l-bottom {
     display: flex;
     gap: 7px;
 }
 
-.l-account .bottom p {
+.l-account .l-bottom p {
     font-size: 17px;
     color: white;
 }
