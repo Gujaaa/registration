@@ -147,7 +147,7 @@ body {
 
 .l-box {
     width: auto;
-    height: 300px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,7 +232,17 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 15px;
+    gap: 40px;
+}
+
+.l-account .bottom {
+    display: flex;
+    gap: 7px;
+}
+
+.l-account .bottom p {
+    font-size: 17px;
+    color: white;
 }
 
 .account {
